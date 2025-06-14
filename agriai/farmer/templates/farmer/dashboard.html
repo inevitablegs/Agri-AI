@@ -1,7 +1,27 @@
-{% extends 'myapp/base.html' %}
+{% extends 'farmer/base.html' %}
 {% load i18n %}
+
 {% block title %}{% trans "Dashboard" %}{% endblock %}
+
 {% block content %}
-<h2>{% blocktrans %}Welcome, {{ user.username }}!{% endblocktrans %}</h2>
-<p>{% trans "This is your dashboard." %}</p>
+<div class="dashboard-container">
+    <h2>{{ greeting }}</h2>
+    
+    <div class="voice-commands">
+        <h3>{% trans "Available Voice Commands" %}</h3>
+        <ul>
+            <li>{% trans "Ask about weather" %}</li>
+            <li>{% trans "Get crop advice" %}</li>
+            <li>{% trans "Check market prices" %}</li>
+        </ul>
+    </div>
+    
+    {% if messages %}
+    <div class="messages">
+        {% for message in messages %}
+        <div class="alert">{{ message }}</div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
 {% endblock %}

@@ -1,0 +1,30 @@
+/* Right-to-left support for languages like Arabic if needed */
+[dir="rtl"] {
+    text-align: right;
+}
+
+/* Language-specific font adjustments */
+:lang(hi) {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+:lang(mr) {
+    font-family: 'Noto Sans Devanagari', sans-serif;
+}
+
+/* Voice assistant button styling */
+#start-listening {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#voice-output {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    min-height: 50px;
+}
