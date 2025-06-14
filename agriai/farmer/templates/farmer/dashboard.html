@@ -1,0 +1,7 @@
+{% extends 'myapp/base.html' %}
+{% load i18n %}
+{% block title %}{% trans "Dashboard" %}{% endblock %}
+{% block content %}
+<h2>{% blocktrans %}Welcome, {{ user.username }}!{% endblocktrans %}</h2>
+<p>{% trans "This is your dashboard." %}</p>
+{% endblock %}
