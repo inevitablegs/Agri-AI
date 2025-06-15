@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-15 13:59+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "English"
+msgstr "इंग्रजी"
+
+msgid "Hindi"
+msgstr "हिंदी"
+
+msgid "Marathi"
+msgstr "मराठी"
+
+msgid "Agri-AI Assistant"
+msgstr "अ‍ॅग्री-एआय सहाय्यक"
+
+msgid "Home"
+msgstr ""
+
+msgid "Dashboard"
+msgstr ""
+
+msgid "Logout"
+msgstr ""
+
+msgid "Login"
+msgstr ""
+
+msgid "Signup"
+msgstr ""
+
+msgid "Available Voice Commands"
+msgstr "उपलब्ध व्हॉईस आज्ञा"
+
+msgid "Ask about weather"
+msgstr "हवामानाबद्दल विचारा"
+
+msgid "Get crop advice"
+msgstr "पीक सल्ला मिळवा"
+
+msgid "Check market prices"
+msgstr "बाजाराच्या किंमती तपासा"
+
+msgid "Welcome to the Homepage"
+msgstr "मुख्यपृष्ठावर आपले स्वागत आहे"
+
+msgid "Sign Up"
+msgstr ""
+
+msgid "Welcome to Agri-AI Assistant"
+msgstr "अ‍ॅग्री-एआय सहाय्यक मध्ये आपले स्वागत आहे"
+
+msgid "Multilingual support"
+msgstr "बहुभाषिक समर्थन"
+
+msgid "Crop recommendations"
+msgstr "पीक शिफारसी"
+
+msgid "Weather information"
+msgstr "हवामान माहिती"
+
+msgid "Market prices"
+msgstr "बाजारभाव"
+
+msgid "Create your farmer account"
+msgstr "आपले शेतकरी खाते तयार करा"
+
+msgid "Farmer Login"
+msgstr "शेतकरी लॉगिन"
+
+#, python-format
+msgid "Welcome, %(username)s!"
+msgstr "आपले स्वागत आहे, %(username) एस!"
+
+msgid "Check Weather"
+msgstr "हवामान तपासा"
+
+msgid "Crop Advice"
+msgstr "पीक सल्ला"
+
+msgid "Market Prices"
+msgstr "बाजारभाव"
+
+msgid "Sunny with partial clouds"
+msgstr "आंशिक ढगांसह सनी"
+
+msgid "Rabi"
+msgstr "रबी"
+
+msgid "Wheat"
+msgstr "गहू"
+
+msgid "Mustard"
+msgstr "मोहरी"
+
+msgid "Chickpea"
+msgstr "चणा"

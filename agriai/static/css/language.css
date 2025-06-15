@@ -1,3 +1,21 @@
+/* agriai/static/css/language.css */
+
+/* Language selector styling */
+.language-selector {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 1000;
+}
+
+.language-selector select {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 14px;
+}
+
 /* Right-to-left support for languages like Arabic if needed */
 [dir="rtl"] {
     text-align: right;
@@ -12,19 +30,11 @@
     font-family: 'Noto Sans Devanagari', sans-serif;
 }
 
-/* Voice assistant button styling */
-#start-listening {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-#voice-output {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    min-height: 50px;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .language-selector {
+        position: static;
+        margin: 10px 0;
+        text-align: center;
+    }
 }

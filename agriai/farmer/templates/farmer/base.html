@@ -1,11 +1,14 @@
 <!-- agriai/farmer/templates/farmer/base.html -->
+
 {% load i18n static %}
 
 <!DOCTYPE html>
 <html lang="{{ LANGUAGE_CODE }}">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{% trans "Agri-AI Assistant" %}{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/language.css' %}">
 </head>
 <body>
     <header>
@@ -21,8 +24,9 @@
         </nav>
         
         <div class="language-selector">
-            <form action="{% url 'set_language' %}" method="post">
+            <form id="language-form" action="{% url 'set_language' %}" method="post">
                 {% csrf_token %}
+                <input name="next" type="hidden" value="{{ request.path }}">
                 <select name="language" onchange="this.form.submit()">
                     {% get_current_language as LANGUAGE_CODE %}
                     {% get_available_languages as LANGUAGES %}
@@ -40,6 +44,10 @@
         {% block content %}{% endblock %}
     </main>
 
-    {% block scripts %}{% endblock %}
+    {% block scripts %}
+    <script>
+    // Add any language-related JavaScript here if needed
+    </script>
+    {% endblock %}
 </body>
 </html>

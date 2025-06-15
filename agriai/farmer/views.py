@@ -1,10 +1,12 @@
 # agriai/farmer/views.py
+
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.utils.translation import gettext as _
-from django.http import JsonResponse
+from django.utils.translation import gettext as _, activate, get_language
+from django.http import JsonResponse, HttpResponseRedirect
+from django.conf import settings
 
 def home(request):
     context = {
@@ -54,7 +56,7 @@ def logout_view(request):
 
 @login_required
 def dashboard(request):
-    greeting = _("Welcome, %(username)s!") % {'username': request.user.username}
+    greeting = _("Welcome, {username}!").format(username=request.user.username)
     
     context = {
         'greeting': greeting,
@@ -67,7 +69,6 @@ def dashboard(request):
     return render(request, 'farmer/dashboard.html', context)
 
 def get_agriculture_data(request):
-    # This would connect to your agriculture data sources
     # Sample implementation with translations
     data = {
         'weather': {
